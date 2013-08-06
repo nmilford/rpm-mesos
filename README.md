@@ -25,4 +25,4 @@ You will need the autoconf and libunwind from http://repo.milford.io and the Ora
 
 `wget https://raw.github.com/nmilford/rpm-mesos/master/mesos-slave -O ~/rpmbuild/SOURCES/mesos-slave`
 
-`rpmbuild -bb ~/rpmbuild/SPECS/mesos.spec`
+`QA_RPATHS=$[ 0x0002|0x0001 ]rpmbuild -bb ~/rpmbuild/SPECS/mesos.spec`

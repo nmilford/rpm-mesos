@@ -13,7 +13,7 @@
 # wget https://raw.github.com/nmilford/rpm-mesos/master/mesos-master -O ~/rpmbuild/SOURCES/mesos-master
 # wget https://raw.github.com/nmilford/rpm-mesos/master/mesos-slave -O ~/rpmbuild/SOURCES/mesos-slave
 #
-# rpmbuild -bb ~/rpmbuild/SPECS/mesos.spec
+# QA_RPATHS=$[ 0x0002|0x0001 ] rpmbuild -bb ~/rpmbuild/SPECS/mesos.spec
 
 %define mesos_etc    %{_sysconfdir}/%{name}
 %define mesos_config %{mesos_etc}/conf
